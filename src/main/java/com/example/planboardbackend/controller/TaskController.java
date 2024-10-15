@@ -26,13 +26,15 @@ public class TaskController implements TaskApi {
         ResponseTaskDto task = taskService.getTask(id, user);
         return ResponseEntity.ok(task);
     }
+
     @PatchMapping("{id}/update")
     public ResponseEntity<ResponseTaskDto> updateTask(@AuthenticationPrincipal User user,
                                                       @PathVariable Long id,
-                                                      @Validated @RequestBody RequestUpdateTaskDto requestUpdateTaskDto){
+                                                      @Validated @RequestBody RequestUpdateTaskDto requestUpdateTaskDto) {
         ResponseTaskDto task = taskService.updateTask(user, id, requestUpdateTaskDto);
         return ResponseEntity.ok(task);
     }
+
     @DeleteMapping("/{id}/delete")
     public ResponseEntity<?> deleteTask(@AuthenticationPrincipal User user,
                                         @PathVariable Long id) {

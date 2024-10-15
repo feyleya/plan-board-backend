@@ -32,7 +32,7 @@ public class User implements UserDetails {
     String password;
 
     @Builder.Default
-    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     List<Task> tasks = new ArrayList<>();
     @Enumerated(EnumType.STRING)
     Role role;
@@ -41,13 +41,16 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return role != null ? List.of(new SimpleGrantedAuthority("ROLE_" + role.name())) : List.of();
     }
+
     @Override
     public String getUsername() {
         return email;
     }
-    public String getName(){
+
+    public String getName() {
         return username;
     }
+
     @Override
     public boolean isAccountNonExpired() {
         return UserDetails.super.isAccountNonExpired();

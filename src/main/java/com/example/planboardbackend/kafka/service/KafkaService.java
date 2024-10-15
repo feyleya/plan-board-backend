@@ -12,7 +12,7 @@ import static com.example.planboardbackend.kafka.config.KafkaTopicConfig.emailSe
 public class KafkaService {
     private final KafkaTemplate<String, EmailSendingDto> kafkaTemplate;
 
-    public void sendRegisterEmailMessage(EmailSendingDto emailSendingDto){
+    public void sendRegisterEmailMessage(EmailSendingDto emailSendingDto) {
         kafkaTemplate.send(emailSendingTask, emailSendingDto);
     }
 

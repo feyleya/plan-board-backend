@@ -10,7 +10,7 @@ public class KafkaTopicConfig {
     public static final String emailSendingTask = "email-sending-task";
 
     @Bean
-    public NewTopic createTopic(){
+    public NewTopic createTopic() {
         return TopicBuilder
                 .name(emailSendingTask)
                 .build();

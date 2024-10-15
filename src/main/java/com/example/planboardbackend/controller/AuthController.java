@@ -22,22 +22,25 @@ import org.springframework.web.bind.annotation.RestController;
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 public class AuthController implements AuthApi {
     AuthService authService;
+
     @PostMapping("/signup")
-    public ResponseEntity<AuthResponseDto> signUp(@RequestBody @Validated RegistrationUserDto registrationUserDto){
+    public ResponseEntity<AuthResponseDto> signUp(@RequestBody @Validated RegistrationUserDto registrationUserDto) {
         return ResponseEntity.ok(authService.signup(registrationUserDto));
     }
+
     @PostMapping("/signin")
-    public ResponseEntity<AuthResponseDto> signIn(@RequestBody @Validated AuthRequestDto requestDto){
+    public ResponseEntity<AuthResponseDto> signIn(@RequestBody @Validated AuthRequestDto requestDto) {
         return ResponseEntity.ok(authService.signin(requestDto));
     }
 
     @PostMapping("/logout")
-    public ResponseEntity<String> logout(@RequestBody @Validated RefreshRequestDto refreshDto){
+    public ResponseEntity<String> logout(@RequestBody @Validated RefreshRequestDto refreshDto) {
         authService.logout(refreshDto.getRefreshToken());
         return ResponseEntity.ok("Successfully logged out");
     }
+
     @PostMapping("/refresh-token")
-    public ResponseEntity<AuthResponseDto> refreshAccessToken(@RequestBody @Validated RefreshRequestDto requestDto){
+    public ResponseEntity<AuthResponseDto> refreshAccessToken(@RequestBody @Validated RefreshRequestDto requestDto) {
         return ResponseEntity.ok(authService.refreshToken(requestDto));
     }
 }

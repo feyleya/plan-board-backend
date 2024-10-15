@@ -73,14 +73,14 @@ public class TaskServiceImpl implements TaskService {
         taskRepository.delete(task);
     }
 
-    private void updateTaskFields(Task task, RequestUpdateTaskDto dto){
-        if (!Objects.equals(task.getTitle(), dto.getTitle())){
+    private void updateTaskFields(Task task, RequestUpdateTaskDto dto) {
+        if (!Objects.equals(task.getTitle(), dto.getTitle())) {
             task.setTitle(dto.getTitle());
         }
-        if (!Objects.equals(task.getDescription(), dto.getDescription())){
+        if (!Objects.equals(task.getDescription(), dto.getDescription())) {
             task.setDescription(dto.getDescription());
         }
-        if (dto.getIscompleted() != null){
+        if (dto.getIscompleted() != null) {
             task.setIscompleted(dto.getIscompleted());
             task.setCompletedAt(dto.getIscompleted() ? LocalDateTime.now() : null);
         }

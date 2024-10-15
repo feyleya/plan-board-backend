@@ -19,14 +19,16 @@ public class KafkaProducerConfig {
 
     @Value("${spring.kafka.bootstrap-address}")
     private String bootstrapAddress;
+
     @Bean
-    public ProducerFactory<String, EmailSendingDto> producerFactory(){
+    public ProducerFactory<String, EmailSendingDto> producerFactory() {
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
         return new DefaultKafkaProducerFactory<>(configProps);
     }
+
     @Bean
     public KafkaTemplate<String, EmailSendingDto> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
