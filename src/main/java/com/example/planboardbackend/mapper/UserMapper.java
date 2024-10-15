@@ -1,5 +1,6 @@
 package com.example.planboardbackend.mapper;
 
+import com.example.planboardbackend.auth.dto.RegistrationUserDto;
 import com.example.planboardbackend.dto.ResponseUserDto;
 import com.example.planboardbackend.model.User;
 import org.mapstruct.Mapper;
