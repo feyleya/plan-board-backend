@@ -1,7 +1,7 @@
-package com.example.planboardbackend.repository;
+package com.example.planboardbackend.model.repository;
 
-import com.example.planboardbackend.model.Task;
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.entity.Task;
+import com.example.planboardbackend.model.entity.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,5 +15,4 @@ public interface TaskRepository extends CrudRepository<Task, Long> {
     Optional<Task> findByIdAndUser(Long id, User user);
 
     boolean existsByIdAndUser(Long id, User user);
-
 }

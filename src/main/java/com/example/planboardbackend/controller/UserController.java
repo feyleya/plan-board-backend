@@ -1,8 +1,8 @@
 package com.example.planboardbackend.controller;
 
 import com.example.planboardbackend.api.UserApi;
-import com.example.planboardbackend.dto.ResponseUserDto;
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.dto.ResponseUserDto;
+import com.example.planboardbackend.model.entity.User;
 import com.example.planboardbackend.service.UserService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;

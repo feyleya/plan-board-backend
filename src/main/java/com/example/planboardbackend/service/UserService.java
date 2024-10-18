@@ -1,7 +1,7 @@
 package com.example.planboardbackend.service;
 
-import com.example.planboardbackend.dto.ResponseUserDto;
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.dto.ResponseUserDto;
+import com.example.planboardbackend.model.entity.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 public interface UserService extends UserDetailsService {

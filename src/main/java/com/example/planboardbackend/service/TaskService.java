@@ -1,9 +1,9 @@
 package com.example.planboardbackend.service;
 
-import com.example.planboardbackend.dto.RequestCreateTaskDto;
-import com.example.planboardbackend.dto.RequestUpdateTaskDto;
-import com.example.planboardbackend.dto.ResponseTaskDto;
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.dto.RequestCreateTaskDto;
+import com.example.planboardbackend.model.dto.RequestUpdateTaskDto;
+import com.example.planboardbackend.model.dto.ResponseTaskDto;
+import com.example.planboardbackend.model.entity.User;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
 package com.example.planboardbackend.api;
 
-import com.example.planboardbackend.dto.RequestUpdateTaskDto;
-import com.example.planboardbackend.dto.ResponseTaskDto;
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.dto.RequestUpdateTaskDto;
+import com.example.planboardbackend.model.dto.ResponseTaskDto;
+import com.example.planboardbackend.model.entity.User;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;

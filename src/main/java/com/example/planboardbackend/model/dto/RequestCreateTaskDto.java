@@ -1,12 +1,15 @@
-package com.example.planboardbackend.dto;
+package com.example.planboardbackend.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Value;
+import lombok.*;
 
 @Schema(description = "DTO for creating a new task")
-@Value
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class RequestCreateTaskDto {
 
     @Schema(description = "Title of the task", example = "Complete project report")

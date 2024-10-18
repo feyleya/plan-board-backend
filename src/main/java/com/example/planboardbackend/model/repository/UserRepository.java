@@ -1,6 +1,6 @@
-package com.example.planboardbackend.repository;
+package com.example.planboardbackend.model.repository;
 
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.entity.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

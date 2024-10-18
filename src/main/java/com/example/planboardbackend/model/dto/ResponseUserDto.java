@@ -1,10 +1,13 @@
-package com.example.planboardbackend.dto;
+package com.example.planboardbackend.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Value;
+import lombok.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Schema(description = "Response DTO representing a user")
-@Value
 public class ResponseUserDto {
     @Schema(description = "Unique identifier of the user", example = "42")
     Long id;

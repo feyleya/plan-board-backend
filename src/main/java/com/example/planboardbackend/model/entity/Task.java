@@ -1,4 +1,4 @@
-package com.example.planboardbackend.model;
+package com.example.planboardbackend.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -38,4 +38,8 @@ public class Task {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     User user;
+
+    public void setIscompleted(boolean iscompleted) {
+        this.iscompleted = iscompleted;
+    }
 }

@@ -4,9 +4,12 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Value;
+import lombok.*;
 
-@Value
+@Getter
+@Setter
+@RequiredArgsConstructor
+@AllArgsConstructor
 @Schema(description = "Registration user's request")
 public class RegistrationUserDto {
     @Schema(description = "user's name", example = "Ivan")

@@ -1,9 +1,9 @@
 package com.example.planboardbackend.controller;
 
 import com.example.planboardbackend.api.TaskApi;
-import com.example.planboardbackend.dto.RequestUpdateTaskDto;
-import com.example.planboardbackend.dto.ResponseTaskDto;
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.dto.RequestUpdateTaskDto;
+import com.example.planboardbackend.model.dto.ResponseTaskDto;
+import com.example.planboardbackend.model.entity.User;
 import com.example.planboardbackend.service.TaskService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;

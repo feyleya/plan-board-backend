@@ -1,7 +1,7 @@
 package com.example.planboardbackend.api;
 
-import com.example.planboardbackend.dto.ResponseUserDto;
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.dto.ResponseUserDto;
+import com.example.planboardbackend.model.entity.User;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;

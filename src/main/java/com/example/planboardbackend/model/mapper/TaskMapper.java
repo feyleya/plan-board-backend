@@ -1,8 +1,8 @@
-package com.example.planboardbackend.mapper;
+package com.example.planboardbackend.model.mapper;
 
-import com.example.planboardbackend.dto.RequestCreateTaskDto;
-import com.example.planboardbackend.dto.ResponseTaskDto;
-import com.example.planboardbackend.model.Task;
+import com.example.planboardbackend.model.dto.RequestCreateTaskDto;
+import com.example.planboardbackend.model.dto.ResponseTaskDto;
+import com.example.planboardbackend.model.entity.Task;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

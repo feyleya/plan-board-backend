@@ -1,11 +1,14 @@
-package com.example.planboardbackend.dto;
+package com.example.planboardbackend.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Value;
+import lombok.*;
 
 import java.time.LocalDateTime;
 
-@Value
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Schema(description = "Data transfer object representing a task response")
 public class ResponseTaskDto {
     @Schema(description = "Unique identifier of the task", example = "1")

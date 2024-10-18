@@ -1,6 +1,6 @@
 package com.example.planboardbackend.auth.service;
 
-import com.example.planboardbackend.model.User;
+import com.example.planboardbackend.model.entity.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;

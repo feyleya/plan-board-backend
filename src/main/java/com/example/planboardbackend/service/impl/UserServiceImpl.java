@@ -1,9 +1,9 @@
 package com.example.planboardbackend.service.impl;
 
-import com.example.planboardbackend.dto.ResponseUserDto;
-import com.example.planboardbackend.mapper.UserMapper;
-import com.example.planboardbackend.model.User;
-import com.example.planboardbackend.repository.UserRepository;
+import com.example.planboardbackend.model.dto.ResponseUserDto;
+import com.example.planboardbackend.model.mapper.UserMapper;
+import com.example.planboardbackend.model.entity.User;
+import com.example.planboardbackend.model.repository.UserRepository;
 import com.example.planboardbackend.service.UserService;
 import jakarta.transaction.Transactional;
 import lombok.AccessLevel;

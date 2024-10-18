@@ -1,4 +1,4 @@
-package com.example.planboardbackend.model;
+package com.example.planboardbackend.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

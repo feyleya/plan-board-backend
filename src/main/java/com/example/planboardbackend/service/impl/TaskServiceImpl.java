@@ -1,13 +1,13 @@
 package com.example.planboardbackend.service.impl;
 
-import com.example.planboardbackend.dto.RequestCreateTaskDto;
-import com.example.planboardbackend.dto.RequestUpdateTaskDto;
-import com.example.planboardbackend.dto.ResponseTaskDto;
+import com.example.planboardbackend.model.dto.RequestCreateTaskDto;
+import com.example.planboardbackend.model.dto.RequestUpdateTaskDto;
+import com.example.planboardbackend.model.dto.ResponseTaskDto;
 import com.example.planboardbackend.exception.custom.TaskNotFoundException;
-import com.example.planboardbackend.mapper.TaskMapper;
-import com.example.planboardbackend.model.Task;
-import com.example.planboardbackend.model.User;
-import com.example.planboardbackend.repository.TaskRepository;
+import com.example.planboardbackend.model.mapper.TaskMapper;
+import com.example.planboardbackend.model.entity.Task;
+import com.example.planboardbackend.model.entity.User;
+import com.example.planboardbackend.model.repository.TaskRepository;
 import com.example.planboardbackend.service.TaskService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;

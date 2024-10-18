@@ -1,11 +1,14 @@
-package com.example.planboardbackend.dto;
+package com.example.planboardbackend.model.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Value;
+import lombok.*;
 
-@Value
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Schema(description = "Data transfer object for updating a task")
 public class RequestUpdateTaskDto {
     @NotNull(message = "The title must not be empty")
