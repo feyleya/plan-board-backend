@@ -42,7 +42,7 @@ public interface TaskApi {
                                                                    "type": "about:blank",
                                                                    "title": "Unauthorized",
                                                                    "status": 401,
-                                                                   "instance": "/api/v1/tasks/{id}",
+                                                                   "instance": "/api/v1/task/{id}",
                                                                    "errors": [
                                                                        "User not authenticated"
                                                                    ]
@@ -64,7 +64,7 @@ public interface TaskApi {
                                                                    "type": "about:blank",
                                                                    "title": "Not Found",
                                                                    "status": 404,
-                                                                   "instance": "/api/v1/tasks/{id}",
+                                                                   "instance": "/api/v1/task/{id}",
                                                                    "errors": [
                                                                        "Task not found"
                                                                    ]
@@ -107,7 +107,7 @@ public interface TaskApi {
                                                        "type": "about:blank",
                                                        "title": "Bad Request",
                                                        "status": 400,
-                                                       "instance": "/api/v1/tasks/{id}/update",
+                                                       "instance": "/api/v1/task/{id}/update",
                                                        "errors": [
                                                            "The title size must be from 3 to 50 characters",
                                                            "Description size must be up to 1000 characters"
@@ -128,7 +128,7 @@ public interface TaskApi {
                                                        "type": "about:blank",
                                                        "title": "Unauthorized",
                                                        "status": 401,
-                                                       "instance": "/api/v1/tasks/{id}/update",
+                                                       "instance": "/api/v1/task/{id}/update",
                                                        "errors": [
                                                            "User not authenticated"
                                                        ]
@@ -148,7 +148,7 @@ public interface TaskApi {
                                                        "type": "about:blank",
                                                        "title": "Not Found",
                                                        "status": 404,
-                                                       "instance": "/api/v1/tasks/{id}/update",
+                                                       "instance": "/api/v1/task/{id}/update",
                                                        "errors": [
                                                            "Task not found"
                                                        ]
@@ -188,7 +188,7 @@ public interface TaskApi {
                                                        "type": "about:blank",
                                                        "title": "Unauthorized",
                                                        "status": 401,
-                                                       "instance": "/api/v1/tasks/{id}/delete",
+                                                       "instance": "/api/v1/task/{id}/delete",
                                                        "errors": [
                                                            "User not authenticated"
                                                        ]
@@ -208,7 +208,7 @@ public interface TaskApi {
                                                        "type": "about:blank",
                                                        "title": "Not Found",
                                                        "status": 404,
-                                                       "instance": "/api/v1/tasks/{id}/delete",
+                                                       "instance": "/api/v1/task/{id}/delete",
                                                        "errors": [
                                                            "Task not found"
                                                        ]

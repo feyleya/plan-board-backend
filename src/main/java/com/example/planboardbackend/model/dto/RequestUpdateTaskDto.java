@@ -11,7 +11,7 @@ import lombok.*;
 @AllArgsConstructor
 @Schema(description = "Data transfer object for updating a task")
 public class RequestUpdateTaskDto {
-    @NotNull(message = "The title must not be empty")
+    //@NotNull(message = "The title must not be empty")
     @Size(min = 3, max = 50, message = "The title size must be from 3 to 50 characters")
     @Schema(description = "Title of the task", example = "Updated Task Title")
     String title;

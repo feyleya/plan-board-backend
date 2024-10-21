@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/tasks")
+@RequestMapping("/api/v1/task")
 @FieldDefaults(makeFinal = true, level = AccessLevel.PRIVATE)
 public class TaskController implements TaskApi {
     TaskService taskService;

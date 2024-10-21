@@ -74,10 +74,10 @@ public class TaskServiceImpl implements TaskService {
     }
 
     private void updateTaskFields(Task task, RequestUpdateTaskDto dto) {
-        if (!Objects.equals(task.getTitle(), dto.getTitle())) {
+        if (dto.getTitle() != null && !Objects.equals(task.getTitle(), dto.getTitle())) {
             task.setTitle(dto.getTitle());
         }
-        if (!Objects.equals(task.getDescription(), dto.getDescription())) {
+        if (dto.getDescription() != null &&!Objects.equals(task.getDescription(), dto.getDescription())) {
             task.setDescription(dto.getDescription());
         }
         if (dto.getIscompleted() != null) {
